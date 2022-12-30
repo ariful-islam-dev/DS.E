@@ -1,0 +1,135 @@
+/*=============================================
+=            Variables            =
+=============================================*/
+/**
+ *
+ * Table of Contents
+ *
+ * COLORS
+ * Brand Colors.......................These are the main brand colors. They will be used the most
+ * Neutral Colors.....................White and black, gray scale, secondary colors
+ * Utility Colors.....................Other colors to represent states: info, warings, success, etc
+ *
+ * TYPOGRAPHY
+ * Font families......................The fonts used in thedesign system
+ * Font Weights.......................Font weights
+ * Sizes..............................Font sizing for body text, paragraphs, inputs
+ * Heading Sizes.......................Font sizing for page headings
+ *
+ * BREAKPOINTS
+ * Breakpoints.........................Global Responsive breakpoints definitions.
+ *
+ * SPACING
+ * Spacing ............................Global Fixed set of spacing variables
+ *
+ * SHADOW
+ * Shadows.............................Global fixed set of shadows
+ */
+/*=============================================
+ =            Colors            =
+ =============================================*/
+/* Brand Color */
+/* Nutral Color */
+/* Utility Colors */
+/*=====  End of COLORS  ======*/
+/*=============================================
+ =            TYPOGRAPH            =
+ =============================================*/
+/* Font Families */
+/**
+  *
+  * 1) The playfair font. We'll use theis for headings mostly.
+  *     https://fonts.google.com/specimen/Playfair+Display
+  * 2) The raleway font. We'll use this for the body text.
+  *     https://fonts.google.com/specimen/Raleway
+  */
+/* 1 */
+/*2*/
+/* Font Size */
+/* Heading Font Size */
+/* Font Weights */
+/*=====  End of TYPOGRAPHY  ======*/
+/*=============================================
+=            BREAKPOINTS            =
+=============================================*/
+/*=====  End of BREAKPOINTS  ======*/
+/*=============================================
+=            SPACING            =
+=============================================*/
+/*=====  End of SPACING  ======*/
+/*=============================================
+=                     SHADOW                  =
+=============================================*/
+/*=====  End of SHADOW  ======*/
+/*=============================================
+=            Foundation - Colors            =
+=============================================*/
+/**
+ *
+ * This file defines the actual color that will be used for styling. They default to the palette we defined the _variable.scss file. This is our defautl palette, and des can override this with their own variables.
+ *
+ */
+/**
+ *
+ * Defining a SCSS Variable [Instructions]
+ * 1. define a name
+ * 2. value of the variable will be a css var, so the consumer to the design system won't have to use scss
+ * 3. default value will be ascss variable that we declared previously
+ * 4. added !default flag so consumer of the design system can override the scss variable
+ * 5. the --dse prefix of the variable name is a namespace (project name) [dse - design system for engineering]
+ */
+/*=============================================
+ =            Global Text Colors            =
+ =============================================*/
+/*=====  End of Text color  ======*/
+/*=============================================
+ =            Buttons            =
+ =============================================*/
+/*=====  End of Buttons  ======*/
+/*=============================================
+ =            Forms            =
+ =============================================*/
+/*=============================================
+=            Foundation - Typography            =
+=============================================*/
+/**
+ *
+ * This file defines the default font size to be used on headings and texts. the default come from the palette defined in __variables.scss.
+ *
+ */
+/*=============================================
+=            Body font family            =
+=============================================*/
+/*=============================================
+=            Body font Size            =
+=============================================*/
+/*=============================================
+=            Heading font size            =
+=============================================*/
+/*=============================================
+=            Head font weights            =
+=============================================*/
+/*=============================================
+=            Mixins            =
+=============================================*/
+/**
+ *
+ * Helpful reusable function-like things that will be used to implement style for complete
+ *
+ */
+.btn {
+  border: none;
+  border-radius: 0.25rem;
+  font-family: var(--dse-body-font-family, "Playfair Display", serif);
+  font-size: var(--dse-body-font-size, 0.875rem);
+  padding: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--dse-btn-primary-bg-color, #5ece7b);
+  color: var(--dse-btn-primary-color, #fff);
+}
+
+.btn:hover {
+  background-color: var(---dse-btn-primary-bg-hover, #9ee2b0);
+}
