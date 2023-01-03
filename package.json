@@ -1,0 +1,21 @@
+{
+  "name": "@ds.e/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com-nodeAriful:nodeAriful/DS.E.git",
+  "author": "ariful4082 <ariful4082@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^6.3.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "playgrounds"
+    ]
+  },
+  "private": true,
+  "scripts": {
+    "build": "yarn lerna run build"
+  }
+}
