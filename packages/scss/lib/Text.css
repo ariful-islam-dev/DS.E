@@ -120,8 +120,28 @@
  * Helpful reusable function-like things that will be used to implement style for complete
  *
  */
-.dse-panel_container {
-  background-color: #f1f2f3;
-  display: flex;
-  position: absolute;
+.dse-text {
+  margin: 0;
+  font-family: var(--dse-body-font-family, "Playfair Display", serif);
+  color: #1d1f22;
+}
+
+.dse-text-xs {
+  font-size: 0.75rem;
+}
+
+.dse-text-sm {
+  font-size: 0.875rem;
+}
+
+.dse-text-base {
+  font-size: 1rem;
+}
+
+.dse-text-lg {
+  font-size: 1.125rem;
+}
+
+.dse-text-xl {
+  font-size: 1.5rem;
 }
