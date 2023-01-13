@@ -1,0 +1,66 @@
+@import '../foundation/all';
+@import '@ds.e/scss/lib/Select.css';
+
+.dse-select{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &_label{
+        align-items: center;
+        background-color: $form-bg-color;
+        border: 1px solid $form-border-color;
+        font-family: $body-font-family;
+
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+
+        @include padding("sm")
+    }
+    &_overlay{
+        @include padding("none");
+        @include margin("none");
+        @include shadow("base");
+
+        list-style-type: none;
+
+        background-color: $form-bg-color;
+        border:  1px solid $form-border-color;
+
+        width: 100%;
+        z-index: 99;
+        position: absolute;
+
+    }
+
+    &_option{
+        @include padding('xs');
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    &_option:hover{
+        background-color: $form-bg-color-hover;
+    }
+    &_option-selected{
+        background-color: $form-bg-option-selected;
+        color: $form-color-option-selected;
+    }
+    &_option-selected:hover{
+        background-color: $form-bg-option-selected;
+    }
+    &_caret{
+        transition: all 250ms ease;
+        &-open{
+            transform:  rotate(180deg);
+        }
+        &-close{
+            transform: rotate(0deg);
+        }
+    }
+}
